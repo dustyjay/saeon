@@ -36,10 +36,12 @@
 
 /* latest videos */
 
-.latest-video{
+.latest-video,
+.music{
     width: 80%;
     margin: auto;
     margin-top: 60px;
+    margin-bottom: 200px;
 }
 
 .latest-video .video-video iframe{
@@ -88,4 +90,53 @@
         margin-top: 20px;
     }
 
+}
+
+/* music */
+
+@font-face{
+    src: url("../fonts/CircularStd.ttf");
+    font-family: circular;
+}
+
+.music{
+    margin-bottom: 0;
+    font-family: circular, sans-serif;
+}
+
+.music iframe{
+    position: relative;
+    top: 50px;
+    right: 20px;
+    width: 100%;
+}
+
+.music-links a{
+    text-decoration: underline;
+    margin-right: 15px;
+    text-underline-position: under;
+    -ms-text-underline-position: under;
+    color: black;
+    line-height: 50px;
+}
+
+.music-text > h5{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.music-text hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 58%;
+    max-width: 180px;
+    border-top: 1px solid #CEC40D;
+}
+
+.big-lady{
+    width: 100%;
+    min-height: 2100px;
+    background: linear-gradient(to left,rgba(220,220,220,0.8),rgba(252,252,252,1.0)) ,url(../img/photos.png);
+    background-position: right center;
+    background-repeat: no-repeat;
 }
