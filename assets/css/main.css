@@ -40,7 +40,7 @@ button{
 }
 
 h1{
-    font-size: 60px;
+    font-size: 40px;
 }
 h2{
     font-size: 32px;
@@ -259,6 +259,8 @@ input::-moz-placeholder{
 .footer{
     background: #CEC40D;
     margin: 0;
+    position: relative;
+    top: -2px;
     padding: 0px 20px;
 }
 
