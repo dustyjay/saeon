@@ -1,9 +1,9 @@
 .header{
-    padding: 30px 10px 10px;
+    padding: 25px 10px 25px;
     position: fixed;
     background: white;
     z-index: 20;
-    top: 0;
+    top: 0px;
     width: 100%;
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
 }
@@ -14,7 +14,50 @@
 
 @media(min-width: 468px){
     .header{
-        padding: 30px 60px 10px;
+        padding: 25px 60px 25px;
+    }
+}
+
+.container-fluid.home{
+    margin-top: 0px
+}
+
+.note{
+    width: 100%;
+    z-index: 200;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: -70px;
+    background: black!important;
+    height: 70px!important;
+}
+
+.note h5,
+.note span{
+    /* font-size: 18px; */
+    color: white;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.note span{
+    padding-left: 10px;
+    /* display: none; */
+}
+
+.note img:first-child{
+    width: 45%;
+}
+
+.note img:last-child{
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+@media(min-width: 425px){
+    .note img:first-child{
+        width: auto;
     }
 }
 
@@ -198,6 +241,18 @@
     width: 100%;
 }
 
+.music-links{
+    width: 70%;
+    margin: auto;
+}
+
+@media(min-width: 576px){
+    .music-links{
+        width: 75%;
+        margin: 0;
+    }
+}
+
 .music-text{
     text-align: center;
 }
@@ -241,12 +296,16 @@
     line-height: 50px;
 }
 
+.music-links a:hover{
+    color: rgba(0,0,0,0.4);
+}
+
 .music-text > h5{
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
-.big-lady{
+.big-lady.container-fluid{
     position: relative;
     z-index: -1;
     width: 100%;
@@ -256,10 +315,20 @@
     background-repeat: no-repeat;
 }
 
+.big-lady.container-fluid.home{
+    background-position: 60% 85%
+}
+
 @media(min-width: 768px){
-    .big-lady{
-        background-position: right center;
+    .big-lady.container-fluid,
+    .big-lady.container-fluid.home{
+        background-position: right 100%;
     }
+}
+
+.big-lady{
+    position: relative;
+    min-height: 1500px;
 }
 
 .big-lady .instagram{
@@ -286,7 +355,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 32%;
+    top: 25%;
     margin: auto;
     z-index: 2;
 }
@@ -294,7 +363,7 @@
 @media(min-width: 525px){
     .big-lady .insta-pix{
         width: 500px;
-        top: 20%;
+        top: 8%;
     }
 }
 
